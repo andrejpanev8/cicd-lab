@@ -43,5 +43,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
+	  context: .
+    	  file: ./Dockerfile
           push: true
           tags: andrejpanev8/cicd-lab:latest
